@@ -1,0 +1,10 @@
+<p>animals works!</p>
+
+<h1>Animal List</h1>
+<ul>
+  <li *ngFor="let animal of animals">
+    <a routerLinkActive="active" [routerLink]="[animal]">{{ animal }}</a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
